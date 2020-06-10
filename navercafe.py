@@ -328,7 +328,7 @@ def init(window):
     Label(frame2, text="카페URL", width=20).grid(row=4, column=1)
     Label(frame2, text="게시판번호", width=20).grid(row=4, column=2)
     Label(frame2, text="페이지수",width=20).grid(row=4, column=3)
-    Button(frame2, text="시작", command=lambda radVar=radVar, radVar2=radVar2, items=items: do_crawling(radVar, radVar2, items, False, None)).grid(row=4, column=4)
+    Button(frame2, text="시작", command=lambda radVar=radVar, radVar2=radVar2, items=items: do_crawling(radVar, radVar2, items, False, None, None)).grid(row=4, column=4)
     start_send = Button(frame2, text="시작+발송")
     start_send.grid(row=4, column=5)
     frame3.grid(row=5, column=0, columnspan=6)
